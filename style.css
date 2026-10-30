@@ -1,0 +1,544 @@
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #18334d;
+    background-color: #f5faff;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background-color: white;
+}
+
+.logo {
+    color: #0877b9;
+}
+
+
+
+.navbar a {
+    text-decoration: none;
+    color: #18334d;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #0877b9;
+}
+
+.hero {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 7%;
+    color: rgb(146, 143, 240);
+
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+.hero-content p {
+    font-size: 30px;
+    margin-bottom: 25px;
+    margin-left: 70px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0877b9;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 70px;
+}
+
+.btn:hover {
+    background-color: #064f7d;
+}
+
+.destinations {
+    padding: 50px 7%;
+    text-align: center;
+}
+
+.destinations h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.about h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+}
+
+.card h3 {
+    margin: 15px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+.about {
+    background-color: #e4f4ff;
+    text-align: center;
+    padding: 45px 10%;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+.destination-hero {
+    height: 450px;
+    color: rgb(146, 143, 240);
+    text-align: center;
+    padding: 80px 20px;
+
+}
+
+.destination-hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.destination-hero p {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.card-container .card {
+    margin-bottom: 10px;
+}
+
+.card img {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .destination-hero h1 {
+        font-size: 28px;
+    }
+}
+
+.packages-hero {
+    color: rgb(146, 143, 240);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.packages-hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.packages {
+    padding: 50px 7%;
+    text-align: center;
+}
+
+.packages h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.package-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.package-card {
+    width: 300px;
+    background: white;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+}
+
+.package-card img {
+    width: 100%;
+    height: 190px;
+}
+
+.package-card h3 {
+    margin: 18px 10px;
+}
+
+.package-card p {
+    margin: 12px;
+}
+
+.package-card h2 {
+    color: #0877b9;
+    margin: 20px 0;
+}
+
+.btn1 {
+    display: inline-block;
+    background-color: #0877b9;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.btn1:hover {
+    background-color: #064f7d;
+}
+
+.booking {
+    background-color: #e4f4ff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.booking h2 {
+    margin-bottom: 20px;
+}
+
+.booking p {
+    margin: 12px;
+}
+
+@media (max-width: 768px) {
+    .packages-hero h1 {
+        font-size: 28px;
+    }
+
+    .package-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+.gallery-hero {
+    color: rgb(146, 143, 240);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+
+.gallery-hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.gallery {
+    padding: 50px 7%;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-item h3 {
+    background-color: white;
+    padding: 25px;
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-hero h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-hero {
+    color: rgb(146, 143, 240);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+*.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px 7%;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+
+}
+
+.contact-info h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #0877b9;
+}
+
+.contact-form h2 {
+    margin-bottom: 25px;
+    color: #0877b9;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form label {
+    display: block;
+    margin: 15px 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd6df;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0877b9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #064f7d;
+}
+
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 28px;
+    }
+
+    .contact-section {
+        padding: 30px 5%;
+    }
+}
+
+.about-hero {
+    color: rgb(146, 143, 240);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+
+.about-table {
+    padding: 50px 7%;
+    text-align: center;
+}
+
+.about-table h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: rgb(146, 143, 240);
+}
+
+.about-table table {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.about-table th,
+.about-table td {
+    border: 2px solid #cdb8e8;
+    padding: 16px;
+    text-align: left;
+}
+
+.about-table th {
+    font-size: 24px;
+    background-color: rgb(173, 144, 207);
+    color: white;
+}
+
+.about-table tr:nth-child(even) {
+    background-color: #ecd6ff;
+}
+
+.about-table tr:hover {
+    background-color: #e4cbeb;
+}
+
+@media (max-width: 600px) {
+    .about-table {
+        padding: 30px 4%;
+    }
+
+    .about-table th,
+    .about-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+.timing {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ecd6ff;
+    border-radius: 12px;
+}
+
+.timing h2 {
+    color: rgb(208, 142, 230);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timing ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timing li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #d07ddd;
+    border-radius: 5px;
+}
+
+.timing li:hover {
+    background-color: rgb(208, 142, 230);
+}
